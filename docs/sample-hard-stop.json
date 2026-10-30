@@ -1,0 +1,253 @@
+{
+  "generatedAt": "2026-10-30T18:18:42.571Z",
+  "base": "http://localhost:3000",
+  "mode": "demo (mock upstream, simulated tokens)",
+  "budget": {
+    "id": "proof-mvvapzgb",
+    "name": "proof-mvvapzgb",
+    "limitUsd": 0.02,
+    "softPct": 0.8,
+    "spentUsd": 0,
+    "remainingUsd": 0.02,
+    "percentUsed": 0,
+    "state": "armed",
+    "softAlert": false,
+    "hardStop": false,
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "calls": 0,
+    "blockedCalls": 0,
+    "softAlertAt": null,
+    "trippedAt": null,
+    "createdAt": "2026-10-30T18:18:42.532Z"
+  },
+  "summary": {
+    "successfulCalls": 6,
+    "firstSoftAlertCall": 6,
+    "firstBlockedCall": 7
+  },
+  "checks": {
+    "softAlertFired": true,
+    "softBeforeHard": true,
+    "hardStop429": true,
+    "blockedCallsCostNothing": true,
+    "spendNeverExceededLimit": true,
+    "blockedCountMatchesServer": true
+  },
+  "calls": [
+    {
+      "call": 1,
+      "status": 200,
+      "mode": "demo",
+      "softAlertHeader": "false",
+      "spentUsd": 0.00272,
+      "remainingUsd": 0.01728,
+      "tokens": {
+        "input": 22,
+        "output": 38,
+        "estimated": true
+      },
+      "costUsd": 0.00272,
+      "crossedSoftThisCall": false
+    },
+    {
+      "call": 2,
+      "status": 200,
+      "mode": "demo",
+      "softAlertHeader": "false",
+      "spentUsd": 0.00544,
+      "remainingUsd": 0.01456,
+      "tokens": {
+        "input": 22,
+        "output": 38,
+        "estimated": true
+      },
+      "costUsd": 0.00272,
+      "crossedSoftThisCall": false
+    },
+    {
+      "call": 3,
+      "status": 200,
+      "mode": "demo",
+      "softAlertHeader": "false",
+      "spentUsd": 0.00816,
+      "remainingUsd": 0.01184,
+      "tokens": {
+        "input": 22,
+        "output": 38,
+        "estimated": true
+      },
+      "costUsd": 0.00272,
+      "crossedSoftThisCall": false
+    },
+    {
+      "call": 4,
+      "status": 200,
+      "mode": "demo",
+      "softAlertHeader": "false",
+      "spentUsd": 0.01088,
+      "remainingUsd": 0.00912,
+      "tokens": {
+        "input": 22,
+        "output": 38,
+        "estimated": true
+      },
+      "costUsd": 0.00272,
+      "crossedSoftThisCall": false
+    },
+    {
+      "call": 5,
+      "status": 200,
+      "mode": "demo",
+      "softAlertHeader": "false",
+      "spentUsd": 0.0136,
+      "remainingUsd": 0.0064,
+      "tokens": {
+        "input": 22,
+        "output": 38,
+        "estimated": true
+      },
+      "costUsd": 0.00272,
+      "crossedSoftThisCall": false
+    },
+    {
+      "call": 6,
+      "status": 200,
+      "mode": "demo",
+      "softAlertHeader": "true",
+      "spentUsd": 0.01632,
+      "remainingUsd": 0.00368,
+      "tokens": {
+        "input": 22,
+        "output": 38,
+        "estimated": true
+      },
+      "costUsd": 0.00272,
+      "crossedSoftThisCall": true
+    },
+    {
+      "call": 7,
+      "status": 429,
+      "mode": "demo",
+      "softAlertHeader": "true",
+      "spentUsd": 0.01632,
+      "remainingUsd": 0.00368,
+      "error": {
+        "type": "budget_exceeded",
+        "code": "tokenguard_hard_stop",
+        "message": "This call could cost up to $0.00428 but only $0.00368 remains in budget \"proof-mvvapzgb\". Request not sent upstream.",
+        "reason": "projected_cost_exceeds_remaining",
+        "mode": "demo",
+        "budget": {
+          "id": "proof-mvvapzgb",
+          "name": "proof-mvvapzgb",
+          "limitUsd": 0.02,
+          "softPct": 0.8,
+          "spentUsd": 0.01632,
+          "remainingUsd": 0.00368,
+          "percentUsed": 81.6,
+          "state": "warning",
+          "softAlert": true,
+          "hardStop": false,
+          "inputTokens": 132,
+          "outputTokens": 228,
+          "calls": 6,
+          "blockedCalls": 1,
+          "softAlertAt": "2026-10-30T18:18:42.559Z",
+          "trippedAt": null,
+          "createdAt": "2026-10-30T18:18:42.532Z"
+        },
+        "projectedCostUsd": 0.00428
+      }
+    },
+    {
+      "call": 8,
+      "status": 429,
+      "mode": "demo",
+      "softAlertHeader": "true",
+      "spentUsd": 0.01632,
+      "remainingUsd": 0.00368,
+      "error": {
+        "type": "budget_exceeded",
+        "code": "tokenguard_hard_stop",
+        "message": "This call could cost up to $0.00428 but only $0.00368 remains in budget \"proof-mvvapzgb\". Request not sent upstream.",
+        "reason": "projected_cost_exceeds_remaining",
+        "mode": "demo",
+        "budget": {
+          "id": "proof-mvvapzgb",
+          "name": "proof-mvvapzgb",
+          "limitUsd": 0.02,
+          "softPct": 0.8,
+          "spentUsd": 0.01632,
+          "remainingUsd": 0.00368,
+          "percentUsed": 81.6,
+          "state": "warning",
+          "softAlert": true,
+          "hardStop": false,
+          "inputTokens": 132,
+          "outputTokens": 228,
+          "calls": 6,
+          "blockedCalls": 2,
+          "softAlertAt": "2026-10-30T18:18:42.559Z",
+          "trippedAt": null,
+          "createdAt": "2026-10-30T18:18:42.532Z"
+        },
+        "projectedCostUsd": 0.00428
+      }
+    },
+    {
+      "call": 9,
+      "status": 429,
+      "mode": "demo",
+      "softAlertHeader": "true",
+      "spentUsd": 0.01632,
+      "remainingUsd": 0.00368,
+      "error": {
+        "type": "budget_exceeded",
+        "code": "tokenguard_hard_stop",
+        "message": "This call could cost up to $0.00428 but only $0.00368 remains in budget \"proof-mvvapzgb\". Request not sent upstream.",
+        "reason": "projected_cost_exceeds_remaining",
+        "mode": "demo",
+        "budget": {
+          "id": "proof-mvvapzgb",
+          "name": "proof-mvvapzgb",
+          "limitUsd": 0.02,
+          "softPct": 0.8,
+          "spentUsd": 0.01632,
+          "remainingUsd": 0.00368,
+          "percentUsed": 81.6,
+          "state": "warning",
+          "softAlert": true,
+          "hardStop": false,
+          "inputTokens": 132,
+          "outputTokens": 228,
+          "calls": 6,
+          "blockedCalls": 3,
+          "softAlertAt": "2026-10-30T18:18:42.559Z",
+          "trippedAt": null,
+          "createdAt": "2026-10-30T18:18:42.532Z"
+        },
+        "projectedCostUsd": 0.00428
+      }
+    }
+  ],
+  "finalState": {
+    "id": "proof-mvvapzgb",
+    "name": "proof-mvvapzgb",
+    "limitUsd": 0.02,
+    "softPct": 0.8,
+    "spentUsd": 0.01632,
+    "remainingUsd": 0.00368,
+    "percentUsed": 81.6,
+    "state": "warning",
+    "softAlert": true,
+    "hardStop": false,
+    "inputTokens": 132,
+    "outputTokens": 228,
+    "calls": 6,
+    "blockedCalls": 3,
+    "softAlertAt": "2026-10-30T18:18:42.559Z",
+    "trippedAt": null,
+    "createdAt": "2026-10-30T18:18:42.532Z"
+  }
+}

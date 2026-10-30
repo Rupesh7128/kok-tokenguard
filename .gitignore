@@ -1,0 +1,15 @@
+node_modules
+.next
+.env
+.env.*
+!.env.example
+.vercel
+*.log
+.tokenguard-state.json
+node_modules/
+.next/
+.env
+.env.local
+*.log
+.vercel/
+data/

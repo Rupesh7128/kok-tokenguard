@@ -1,0 +1,24 @@
+{
+  "name": "kok-tokenguard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "TokenGuard by Kingdom of Kumar Lab. Budget circuit breaker proxy for OpenAI-compatible chat APIs: token + USD accounting, 80% soft alert, 100% hard stop (HTTP 429). Stdio + hosted MCP.",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "bin": { "kok-tokenguard": "./mcp/server.js" },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "mcp": "node mcp/server.js",
+    "prove:hard-stop": "node scripts/hard-stop.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "next": "^15.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.25.0"
+  }
+}
